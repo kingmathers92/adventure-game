@@ -16,9 +16,9 @@ def print_pause(message_to_print):
 def intro(enemies):
     enemy = random.choice(enemies)
     print_pause("You find yourself standing in an open field, "
-            "filled with grass and yellow wildflowers.")
+                "filled with grass and yellow wildflowers.")
     print_pause(f"Rumor has it that a wicked {enemy} is somewhere "
-            "around here, and has been terrifying the nearby village.")
+                 "around here, and has been terrifying the nearby village.")
     print_pause("In front of you is a house.")
     print_pause("To your right is a dark cave.")
     print_pause("In your hand you hold your trusty (but not very effective) dagger.\n")
@@ -31,7 +31,7 @@ def intro(enemies):
         if choice == '1':
             print_pause("You approach the door of the house.")
             print_pause("You are about to knock when the door opens "
-                        f"and out steps a wicked {enemy}.")
+                       f"and out steps a wicked {enemy}.")
             print_pause(f"Eep! This is the wicked {enemy}'s house!")
             print_pause(f"The wicked {enemy} attacks you!")
             fight = input("Would you like to (1) fight or (2) run away?")
@@ -64,7 +64,7 @@ def intro(enemies):
                 play_again()
             else:
                 print_pause(f"You try to fight the {enemy} "
-                            "nice try, but you weare to weak. You Lose...")
+                             "nice try, but you weare to weak. You Lose...")
             play_again()
 
 
@@ -72,7 +72,7 @@ def intro(enemies):
 def field(weapons):
     print_pause("You are on a crossway in the field.")
     print_pause("On your left is a house on your right "
-                 "a secret cave.\n")
+                "a secret cave.\n")
     print_pause("Please enter a number to make a choice.")
     choice = input("1. Go to the house\n"
                    "2. Go to the cave\n")
